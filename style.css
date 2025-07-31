@@ -43,7 +43,12 @@ nav a:hover {
   color: #c77dff;
 }
 
-
+.profile-photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #c77dff;
+}
 
 .content {
   padding: 40px 20px;
