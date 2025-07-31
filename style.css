@@ -1,58 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f1b;
+  color: #f2f2f2;
+}
+
 header {
   background: #1e1e2e;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  padding: 15px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-.header-content {
+.nav-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   color: #c77dff;
-  font-size: 2rem;
   margin: 0;
 }
 
-.profile-photo-large {
-  margin-top: 15px;
-}
-
-.profile-photo-large img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 4px solid #c77dff;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(199, 125, 255, 0.4);
-}
-
-/* Yeni nav düzeni */
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px 0 0 0;
+  gap: 20px;
   margin: 0;
+  padding: 0;
 }
 
 nav a {
   color: #f2f2f2;
   text-decoration: none;
   font-weight: 500;
-  padding: 6px 12px;
-  transition: all 0.2s ease;
 }
 
 nav a:hover {
   color: #c77dff;
+}
+
+
+
+.content {
+  padding: 40px 20px;
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-card {
   background-color: #2a2a3c;
-  border-radius: 6px;
+  border-left: 4px solid #c77dff;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);
+}
+
+.blog-card h2 {
+  margin-top: 0;
+  color: #c77dff;
+}
+
+.blog-card a {
+  color: #8be9fd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-card a:hover {
+  text-decoration: underline;
 }
